@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Smart Battery Saver | ¿Que es? </title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <ul id="nav">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a class="active" href="quees.html">¿Que es S.B.S.?</a></li>
+        <li><a href="ayuda.html">Ayuda</a></li>
+        <li><a href="contacto">Contacto</a></li>
+    </ul>
+    <div class="header" id="header">
+        <h1>¿Como se utiliza SMART BATTERY SAVER?</h1>
+    </div>
+    <!--SECTION 1-->
+    <div class="row" id="section-2">
+        <div class="two-column">
+            <p class="h1">Nuestra aplicacion es muy buena para ahorrar bateria en tu dispositivo.</p>
+            <p class="h1">Esta aplicacion se basa en el ahorramiento de la bateria de tu dispositivo, lo que hace es buscar programas que esten consumiendo mucha bateria y una vez acabe de escanear te saldra cuanto tiempo de bateria te queda y te dara opcion a tres
+                botones.
+            </p>
+        </div>
+        <!-- Comprueba la Barra de navegacion-->
+        <!--triple id-->
+        <!--comprueba css los puntos, los cierres-->
+        <div class="row" id="section-2">
+            <div class="two-column">
+                <img src="../img/bateria-movil-cargar-cuidar-y-optimizar-grafico-blog.jpg" alt="bateria">
+            </div>
+        </div>
+    </div>
+    <div class="row" id="section-2">
+        <div class="two-column">
+            <img src="../img/Configurar-Doze-Marshmallow.jpg">
+        </div>
+        <div class="row" id="section-2">
+            <div class="two-column">
+                <p class="h1">Estos tres botones son:</p>
+                <p class="h1">- Un boton para iniciar el proceso de optimización</p>
+                <p class="h1">- Botón para ajustes</p>
+                <p class="h1">- Para ver la información sobre la batería</p>
+                <p class="h1">En ajustes tendras para elegir a que aplicaciones les baja el rendimiento y a cuales se lo mantienes</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="row" id="footer">
+        <div class="two-column">
+            <p>-</p>
+            <h2>CONTACTA CON NOSOTROS</h2>
+        </div>
+        <div class="four-column">
+            <p>Llama al +34 636925508</p>
+            <p>Escribe un e-mail a support@sgeoro.com</p>
+        </div>
+        <div class="four-column">
+            <p><a href="https://twitter.com/home">Twitter</a></p>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+        </div>
+    </div>
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("nav").style.backgroundColor = "dodgerblue";
+            } else {
+                document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.0)";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Smart Battery Saver | Contacto </title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <body>
+        <ul id="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="quees.html">¿Que es S.B.S.?</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+
+
+        <!--el header del id lo coge del ul porque es un header unico-->
+        <!--el id del li de section-1 se coge del div de section-1 porque va alli-->
+
+        <!--HEADER-1-->
+        <div class="header" id="header-1">
+            <h1>Contacto</h1>
+            <p>Podemos ayudarte con cualquier duda que tengas</p>
+        </div>
+
+        <div class="row">
+            <h1>¡Contacta con nosotros!</h1>
+        </div>
+
+        <div class="two-column">
+            <h3>Tu nombre (requerido)</h3>
+            <input type="text">
+        </div>
+        <div class="two-column">
+            <h3>Tu correo electrónico (requerido)</h3>
+            <input type="text" size="50">
+        </div>
+        <div class="two-column">
+            <h3>Telefono (requerido)</h3>
+            <input type="text" size="50">
+        </div>
+        <div class="two-column">
+            <h3>Cargo</h3>
+            <input type="text" size="50">
+        </div>
+        <div class="two-column">
+            <h3>Asunto</h3>
+            <input type="text" size="50">
+        </div>
+        <div class="two-column">
+            <h3>Tu mensaje</h3>
+            <input type="text" size="50">
+        </div>
+
+        <!--Section 3-->
+        <div class="row">
+            <div class="one-column">
+                <h2>Puede encontrarnos en este punto del mapa</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-column" id="googleMap">
+                <script>
+                    function myMap() {
+                        var mapProp = {
+                            center: new google.maps.LatLng(41.349783, 2.107549),
+                            zoom: 20,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz7Y_Fqmn0e9pAoFRbKnkTZSZjkaZ75ak&callback=myMap"></script>
+            </div>
+        </div>
+
+
+        <div class="row" id="section-3">
+            <h1>Opciones de contacto</h1>
+            <p>Si necesita que le ayudemos personalmente con su reserva de vuelos, puede contactar con nosotros mediante el formulario de contacto y comentarios o por teléfono. <br>Estaremos encantados de responder a su consulta.</p>
+            <p>Seleccione el menú desplegable de su país para encontrar el número de teléfono y el horario de apertura del centro de atención al cliente correspondiente:</p>
+            <input type="text" size="50">
+        </div>
+
+
+
+        <!-- Footer -->
+
+        <div class="row" id="footer">
+            <div class="two-column">
+                <p>-</p>
+                <h2>CONTACTA CON NOSOTROS</h2>
+            </div>
+            <div class="four-column">
+                <p>Llama al +34 636925508</p>
+                <p>Escribe un e-mail a support@sgeoro.com</p>
+            </div>
+            <div class="four-column">
+                <p><a href="https://twitter.com/home">Twitter</a></p>
+                <p><a href="https://www.instagram.com/">Instagram</a></p>
+            </div>
+        </div>
+
+        <script>
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("nav").style.backgroundColor = "white";
+                } else {
+                    document.getElementById("nav").style.backgroundColor = "rgba{0,0,0,0.0}";
+                }
+            }
+        </script>
+    </body>
+
+</html>

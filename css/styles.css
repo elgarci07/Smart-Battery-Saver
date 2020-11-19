@@ -1,0 +1,234 @@
+    * {
+        box-sizing: border-box;
+        /* font */
+        font-family: "Gill sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /*BARRA DE NAVEGACIÓN*/
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        font-size: 20px;
+        padding: 0 15% 0 10%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: 0.4;
+    }
+    
+    li {
+        float: left;
+        width: 25%;
+    }
+    
+    li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: rgb(143, 143, 143);
+        color: black;
+    }
+    
+    .active {
+        background-color: rgb(27, 27, 27);
+        color: white;
+    }
+    /*Header*/
+    
+    .header {
+        background-image: url('../img/images.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .header h1 {
+        font-size: 4.5vw;
+        color: #000000;
+    }
+    
+    .header h2 {
+        font-size: 3vw;
+    }
+    
+    .header h3 {
+        font-size: 2vw;
+    }
+    /* -- Clases de columnas -- */
+    
+    .one-column {
+        float: left;
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .one-column h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    #googleMap {
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .two-column {
+        padding: 2%;
+        float: left;
+        width: 50%;
+    }
+    
+    .padding-top {
+        padding: 110px 0;
+    }
+    
+    .two-column img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .two-column h1 {
+        font-size: 4vw;
+    }
+    
+    .two-column p {
+        font-size: 2.5vw;
+    }
+    
+    .three-column {
+        float: left;
+        width: 33.3%;
+        padding: 2%;
+    }
+    
+    .three-column p {
+        text-align: center;
+    }
+    
+    .three-column img {
+        width: 100%;
+    }
+    
+    .four-column {
+        float: left;
+        width: 25%;
+        padding: 2%;
+    }
+    
+    .four-column p {
+        text-align: center;
+    }
+    
+    .four-column img {
+        width: 100%;
+    }
+    
+    #section-1 img {
+        padding: 0px;
+    }
+    
+    #section-3 {
+        background-color: #E0E0E0;
+        padding: 30px;
+    }
+    
+    #section-3 img {
+        background-color: #E0E0E0;
+        padding: 0px;
+        width: 87.5%;
+    }
+    
+    #section-4 img {
+        width: 80%;
+        height: 80%;
+    }
+    
+    #section-4 img {
+        width: 80%;
+        height: 80%;
+    }
+    
+    #section-5 {
+        background-color: #46a6fc;
+    }
+    
+    #footer {
+        background-color: black;
+        color: white;
+    }
+    
+    #footer p {
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    #footer p a {
+        text-decoration: none;
+        color: white;
+    }
+    /*Clases auxiliares*/
+    
+    .padding-0 {
+        padding: 0px;
+    }
+    /* Clear floats after the columns */
+    
+    .map {
+        width: 100px;
+        height: 200px;
+    }
+    /*background-color: lightseagreen;*/
+    
+    #pregunta_respuesta {
+        background-color: white;
+        padding: 4%;
+    }
+    
+    #pregunta_respuesta {
+        font-size: 30px;
+    }
+    
+    #premium img {
+        width: 60%;
+        height: 60%;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 700px) {
+        .two-column {
+            width: 100%;
+        }
+        .four-column {
+            width: 100%;
+        }
+        li a {
+            font-size: 2.5vw;
+            width: 100%;
+        }
+        ul {
+            width: 100%;
+            padding: 0px;
+        }
+    }

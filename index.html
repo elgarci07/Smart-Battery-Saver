@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Smart Battery Saver | Home </title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="view/quees.html">¿Que es S.B.S.?</a></li>
+        <li><a href="view/ayuda.html">Ayuda</a></li>
+        <li><a href="view/contacto.html">Contacto</a></li>
+    </ul>
+
+    <!-- Header-->
+    <div class="header" id="header">
+        <h1>SMART BATTERY SAVER</h1>
+        <h3>La mejor aplicación para ahorrar batería</h3>
+    </div>
+
+    <!-- Seccion 1 -->
+    <div class="row" id="section-1">
+        <div class="two-column">
+            <h1>¿Estás harto de que la batería te dure 3 horas en tu teléfono movil?</h1>
+            <p>No te preocupes, tenemos la solución a tu problemas. Para ello, te presentamos nuestra aplicación, ¡Smart Battery Saver!</p>
+        </div>
+        <div class="two-column padding-top">
+            <img src="img/section-1.png" alt="Comparativa de imagenes entre usar el programa y no usarlo">
+        </div>
+    </div>
+
+
+
+    <!-- Seccion 3 -->
+    <div class="row" id="section-3">
+        <div class="two-column">
+            <img src="img/autoconfiguracion.jpg" alt="imagen de seccion 3">
+        </div>
+        <div class="two-column">
+            <h1>Descarga y úsala al momento</h1>
+            <p>Nuestra aplicación obtiene los datos de tu teléfono movil de tal manera que tú no tienes que configurar nada.</p>
+        </div>
+    </div>
+
+    <!-- Seccion 4 -->
+    <div class="row" id="section-4">
+        <div class="two-column">
+            <h1>Disfruta con nuestra sencilla configuración</h1>
+            <p>Utiliza nuestra app de la forma más sencilla posible, utiliza todas las funciones disponibles como optimizar tú teléfono o cambiar el rendimiento de la batería. ¡Todo esto desde el menú principal con un solo click!</p>
+        </div>
+        <div class="two-column padding-top">
+            <img src="img/appdesign2.png" alt="Comparativa de imagenes entre usar el programa y no usarlo">
+        </div>
+    </div>
+
+
+    <!-- Seccion 5 -->
+
+    <div class="row" id="section-5">
+        <div class="one-column">
+            <h1>¡Descarga nuestra app!</h1>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="row" id="footer">
+        <div class="two-column">
+            <h2>CONTACTA CON NOSOTROS</h2>
+        </div>
+        <div class="four-column">
+            <p>Llama al +34 636925508</p>
+            <p>Escribe un e-mail a support@sgeoro.com</p>
+        </div>
+        <div class="four-column">
+            <p><a href="https://twitter.com/home">Twitter</a></p>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("nav").style.backgroundColor = "white";
+            } else {
+                document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.0)";
+            }
+        }
+    </script>
+</body>
+
+</html>

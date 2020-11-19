@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Estos estilos definen la barra de navegación */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 15%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: black;
+}
+
+.header {
+    background-color: turquoise;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+
+/*Clases de columnas*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 7%;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 7%;
+}
+
+.four-column {
+    padding: 7%;
+    float: left;
+    width: 25%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.h2 {
+    font-size: 4.5vw;
+    color: grey;
+}
+
+.h1 {
+    font-size: 1.5vw;
+}
+
+.h3 {
+    font-size: 2vw;
+}
+
+#section-1 {
+    background-color: #28ECA5;
+}
+
+#section-2 {
+    background-color: #28ECA5;
+}
+
+#section-3 {
+    background-color: #28ECA5;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/*Clases auxiliares*/
+
+.padding-0 {
+    padding: 0px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    li a {
+        font-size: 14px;
+    }
+    ul {
+        padding: 0px;
+    }
+}
