@@ -34,6 +34,7 @@
     li {
         float: left;
         width: 25%;
+        background-color: white;
     }
     
     li a {
